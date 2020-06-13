@@ -22,6 +22,15 @@ Deskriptif Dalam memberikan nama baik itu variabel atau fungsi ada baiknya mengg
     </item>
     
     <item>
+      <title>Pentingnya Optimasi dalam Kode</title>
+      <link>https://chimemoo.github.io/posts/pentingnya-optimasi-dalam-kode/</link>
+      <pubDate>Sat, 13 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://chimemoo.github.io/posts/pentingnya-optimasi-dalam-kode/</guid>
+      <description>Pendahuluan Ketika kita mencoba memecahkan masalah dengan menggunakan kode, banyak sekali cara yang dapat digunakan agar masalah tersebut terpecahkan. Mulai dari cara yang umum hingga tidak umum. Ketika kita dihadapkan dengan penggunaan kode tersebut dalam skala besar, misalnya kode tersebut akan digunakan secara terus menerus dalam rentang waktu bersamaan. Kita perlu memikirkan apakah kode yang kita tulis sudah optimal atau belum? Maksud optimal disini adalah resource yang digunakan sedikit dan waktu yang dibutuhkan untuk komputasi sebentar.</description>
+    </item>
+    
+    <item>
       <title>First Post</title>
       <link>https://chimemoo.github.io/posts/first-post/</link>
       <pubDate>Fri, 12 Jun 2020 23:50:34 +0700</pubDate>
