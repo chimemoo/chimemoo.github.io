@@ -6,10 +6,20 @@
     <description>Recent content on Chimemoo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>id</language>
-    <lastBuildDate>Sat, 13 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://chimemoo.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Kamu harus coba Test Driven Development!</title>
+      <link>https://chimemoo.github.io/posts/kamu-harus-coba-test-driven-development/</link>
+      <pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://chimemoo.github.io/posts/kamu-harus-coba-test-driven-development/</guid>
+      <description>Intro Apakah kamu seorang programmer/developer? Ketika kamu membuat sebuah program apakah kamu melakukan testing terlebih dahulu? Jika tidak, segera bertobatlah, just kidding :). Pentingnya testing dalam tahap pengembangan program akan menjauhkan kita (programmer) dari hal yang tidak kita inginkan ketika program tersebut sudah berjalan dua production. Oleh karena itu dalam setiap metode pengembangan software tahapan ini selalu ada.
+Namun melakukan testing pada program yang dibuat adalah hal yang cukup mahal (bisa jadi memakan waktu atau membutuhkan banyak resource) jika dilakukan manual, oleh karena itu muncul lah tool automated testing yang membantu tahapan ini.</description>
+    </item>
     
     <item>
       <title>Bagaimana penamaan Variabel, fungsi, Kelas yang benar?</title>
@@ -42,7 +52,7 @@ Deskriptif Dalam memberikan nama baik itu variabel atau fungsi ada baiknya mengg
     <item>
       <title>First Post</title>
       <link>https://chimemoo.github.io/posts/first-post/</link>
-      <pubDate>Fri, 12 Jun 2020 23:50:34 +0700</pubDate>
+      <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://chimemoo.github.io/posts/first-post/</guid>
       <description>Halo semuanya, ini adalah post pertama saya di blog ini. Blog ini dibuat menggunakan Hugo. Sebelumnya saya bloging menggunakan Medium, namun saya merasa kurang produktif karena saya lebih terbiasa untuk mengetik di code editor. Oleh karena itulah saya membuat blog ini. Blog ini akan berisi berbagai macam informasi yang saya dapatkan secara random dari internet. Selain itu juga soal Clean Code, React, Machine Learning dan lainnya.</description>

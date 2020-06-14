@@ -6,10 +6,20 @@
     <description>Recent content in Programming on Chimemoo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>id</language>
-    <lastBuildDate>Sat, 13 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://chimemoo.github.io/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Kamu harus coba Test Driven Development!</title>
+      <link>https://chimemoo.github.io/posts/kamu-harus-coba-test-driven-development/</link>
+      <pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://chimemoo.github.io/posts/kamu-harus-coba-test-driven-development/</guid>
+      <description>Intro Apakah kamu seorang programmer/developer? Ketika kamu membuat sebuah program apakah kamu melakukan testing terlebih dahulu? Jika tidak, segera bertobatlah, just kidding :). Pentingnya testing dalam tahap pengembangan program akan menjauhkan kita (programmer) dari hal yang tidak kita inginkan ketika program tersebut sudah berjalan dua production. Oleh karena itu dalam setiap metode pengembangan software tahapan ini selalu ada.
+Namun melakukan testing pada program yang dibuat adalah hal yang cukup mahal (bisa jadi memakan waktu atau membutuhkan banyak resource) jika dilakukan manual, oleh karena itu muncul lah tool automated testing yang membantu tahapan ini.</description>
+    </item>
     
     <item>
       <title>Bagaimana penamaan Variabel, fungsi, Kelas yang benar?</title>

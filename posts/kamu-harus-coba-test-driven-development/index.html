@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>Kamu harus coba Test Driven Development! - Chimemoo</title>
+    
+    <meta name="description" content="Intro Apakah kamu seorang programmer/developer? Ketika kamu membuat sebuah program apakah kamu melakukan testing terlebih dahulu? Jika tidak, segera bertobatlah, just kidding :). Pentingnya testing dalam tahap pengembangan program akan menjauhkan kita (programmer) dari hal yang tidak kita inginkan ketika program tersebut sudah berjalan dua production. Oleh karena itu dalam setiap metode pengembangan software tahapan ini selalu ada.
+Namun melakukan testing pada program yang dibuat adalah hal yang cukup mahal (bisa jadi memakan waktu atau membutuhkan banyak resource) jika dilakukan manual, oleh karena itu muncul lah tool automated testing yang membantu tahapan ini.">
+    <meta name="author" content="chimemoo">
+    
+    <link href="https://chimemoo.github.io/an-old-hope.min.css" rel="stylesheet">
+    <link href="https://chimemoo.github.io/style.css" rel="stylesheet">
+    <link href="https://chimemoo.github.io/custom.css" rel="stylesheet">
+    
+    <link rel="apple-touch-icon" href="https://chimemoo.github.io/apple-touch-icon.png">
+    <link rel="icon" href="https://chimemoo.github.io/favicon.ico">
+    <meta name="generator" content="Hugo 0.72.0" />
+    
+    
+    
+    <script>
+      function setTheme() {
+        const time = new Date();
+
+        const prev = localStorage.getItem('date');
+        const date = String(time.getMonth() + 1) + '.' + String(time.getDate());
+
+        const now = time.getTime();
+        let sunrise;
+        let sunset;
+
+        function setBodyClass() {
+          if (now > sunrise && now < sunset) return;
+          document.body.classList.add('dark');
+        }
+
+        if (date !== prev) {
+          fetch('https://api.ipgeolocation.io/astronomy?apiKey=5ed37d85103e4defa5df4c5298ed5215')
+            .then(res => res.json())
+            .then(data => {
+              sunrise = data.sunrise.split(':').map(Number);
+              sunset = data.sunset.split(':').map(Number);
+            })
+            .catch(() => {
+              sunrise = [7, 0];
+              sunset = [19, 0];
+            })
+            .finally(() => {
+              sunrise = time.setHours(sunrise[0], sunrise[1], 0);
+              sunset = time.setHours(sunset[0], sunset[1], 0);
+              setBodyClass();
+              localStorage.setItem('sunrise', sunrise);
+              localStorage.setItem('sunset', sunset);
+            });
+          localStorage.setItem('date', date);
+        } else {
+          sunrise = Number(localStorage.getItem('sunrise'));
+          sunset = Number(localStorage.getItem('sunset'));
+          setBodyClass();
+        }
+      }
+    </script>
+  </head>
+  <body class="single">
+    <script>
+      setTheme();
+    </script>
+    <header class="header">
+      <nav class="nav">
+        <p class="logo"><a href="https://chimemoo.github.io/">Chimemoo</a></p>
+        <ul class="menu">
+          <li>
+            <a href="http://linkedin.com/in/christmemory">My Linkedin</a>
+          </li>
+          <li>
+            <a href="/posts/">Post</a>
+          </li>
+          <li>
+            <a href="/post/about/">About</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+
+
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title">Kamu harus coba Test Driven Development!</h1>
+    <div class="post-meta">chimemoo · June 14, 2020</div>
+  </header>
+  <div class="post-content"><h2 id="intro">Intro</h2>
+<p>Apakah kamu seorang programmer/developer? Ketika kamu membuat sebuah program apakah kamu melakukan testing terlebih dahulu? Jika tidak, <strong>segera bertobatlah</strong>, <strong>just kidding</strong> :). Pentingnya testing dalam tahap pengembangan program akan menjauhkan kita (programmer) dari hal yang tidak kita inginkan ketika program tersebut sudah berjalan dua production. Oleh karena itu dalam setiap metode pengembangan software tahapan ini selalu ada.</p>
+<p>Namun melakukan testing pada program yang dibuat adalah hal yang cukup mahal (bisa jadi memakan waktu atau membutuhkan banyak resource) jika dilakukan manual, oleh karena itu muncul lah tool automated testing yang membantu tahapan ini. Dengan adanya tool tersebut proses testing jadi lebih cepat.</p>
+<h2 id="apa-itu-test-driven-development-tdd">Apa itu Test Driven Development (TDD)?</h2>
+<p>Jika biasanya kamu hanya tahu bahwa testing berada di akhir proses pengembangan. Pada TDD, proses tersebut dibalik, dimana diawal penulisan kode, programmer menulis banyak sekali <code>test case</code>, kemudian berdasarkan <code>test case</code> tersebut kemudian programmer berusaha menulis kode yang bertujuan menyelesaikan test tersebut. Artinya kode yang dibuat harus lolos dalam uji coba yang ditentukan sebelumnya. Ketika kode yang dibuat berhasil melewati proses test, tahapan selanjutnya adalah refactor.</p>
+<h2 id="mengapa-menulis-testing-kode-dilakukan-diawal">Mengapa Menulis Testing kode dilakukan diawal?</h2>
+<p>Hal ini dilakukan karena misalnya ketika kita menulis fungsi untuk mengecek apakah email valid atau tidak. Setelah menulis kode tersebut kita menulis <code>test case</code> nya. Namun yang terjadi misalnya, ternyata kode yang dibuat tidak bisa menyelesaikan salah satu <code>test case</code>, akibatnya kita harus merubah kembali fungsi yang dibuat sebelumnya dan kemudian melakukan test lagi. Hal tersebut bukanlah hal yang baik dilakukan, karena prosesnya menjadi lebih lambat dan tidak efisien. Oleh karena itulah TDD muncul untuk menyelesaikan masalah tersebut.</p>
+<h2 id="studi-kasus">Studi Kasus</h2>
+<p>Saya seorang programmer diperintahkan oleh senior saya untuk membuat sebuah program untuk menghitung penjumlahan angka pada array. Yang pertama saya lakukan adalah menulis <code>test case</code> terlebih dahulu. Karena saya menggunakan <code>pytest</code> secara default nama file test harus diberi awalan nama <code>test_</code> sehingga nama file nya menjadi <code>test_sum_array.py</code>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> sum_array <span style="color:#f92672">import</span> sum_of_array
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">test_5_component</span>():
+    <span style="color:#66d9ef">assert</span>(sum_of_array([<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>]) <span style="color:#f92672">==</span> <span style="color:#ae81ff">15</span>)
+    
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">test_4_component</span>():
+    <span style="color:#66d9ef">assert</span>(sum_of_array([<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>]) <span style="color:#f92672">==</span> <span style="color:#ae81ff">10</span>)
+    
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">test_5_with_decimal</span>():
+    <span style="color:#66d9ef">assert</span>(sum_of_array([<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5.5</span>]) <span style="color:#f92672">==</span> <span style="color:#ae81ff">15.5</span>)
+</code></pre></div><p>Kemudian setelah menulis <code>test case</code> saya menulis fungsi untuk memecahkan masalah tersebut. Berikut <code>sum_array.py</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">sum_of_array</span>(ar):
+    total <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> ar:
+        total <span style="color:#f92672">=</span> total<span style="color:#f92672">+</span>i
+    <span style="color:#66d9ef">return</span> total
+</code></pre></div><p>Kemudian saya menjalankan kode test tersebut. Hasilnya adalah sebagai berikut :</p>
+<pre><code class="language-console" data-lang="console">root@c18a26593cfe:/home/workspace# pytest
+=================================================== test session starts ====================================================
+platform linux -- Python 3.6.3, pytest-5.4.3, py-1.8.1, pluggy-0.13.1
+rootdir: /home/workspace
+plugins: requests-mock-1.5.2
+collected 3 items                                                                                                          
+
+test_sum_array.py ...                                                                                                [100%]
+
+==================================================== 3 passed in 0.03s =====================================================
+</code></pre><p>Berdasarkan hasil diatas, kode yang saya buat berhasil menyelesaikan <code>test case</code>.</p>
+<h2 id="konklusi">Konklusi</h2>
+<p>Dengan adanya Test Driven Development ini proses pengembangan software menjadi lebih menarik, dan menurut saya seperti sebuah game dimana kita sebagai programmer harus bisa menyelesaikan kasus yang kita buat.</p>
+<p>Sekian.</p>
+</div>
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://chimemoo.github.io/tags/testing">Testing</a></li>
+      <li><a href="https://chimemoo.github.io/tags/programming">Programming</a></li>
+      <li><a href="https://chimemoo.github.io/tags/python">Python</a></li>
+    </ul>
+  </footer>
+  <br>
+  
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_shortname = 'chimemoo';
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>
+    Please enable JavaScript to view the
+    <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+  </noscript>
+  
+</article></main>
+<footer class="footer">
+  <span>&copy; 2020 <a href="https://chimemoo.github.io/">Chimemoo</a></span>
+  <span>&middot;</span>
+  <span>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</span>
+  <span>&middot;</span>
+  <span>Theme️ <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper</a></span>
+</footer>
+<script src="https://chimemoo.github.io/highlight.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+</body>
+</html>
+
