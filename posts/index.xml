@@ -13,10 +13,10 @@
     
     <item>
       <title>Buat Carousel auto slide menggunakan React Hooks</title>
-      <link>https://chimemoo.github.io/posts/kamu-harus-coba-test-driven-development/</link>
+      <link>https://chimemoo.github.io/posts/buat-carousel-auto-slide-menggunakan-react-hooks/</link>
       <pubDate>Mon, 15 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://chimemoo.github.io/posts/kamu-harus-coba-test-driven-development/</guid>
+      <guid>https://chimemoo.github.io/posts/buat-carousel-auto-slide-menggunakan-react-hooks/</guid>
       <description>Pendahuluan Halo semua! Untuk tutorial ini saya akan menggunakan snack.expo.io untuk mempercepat proses, sehingga fokus pada proses dan hasilnya saja nanti. Komponen yang akan kita buat pada artikel ini adalah Carousel yang dapat di ganti dengan swipe manual ataupun otomatis. Kita akan menggunakna React Hooks diantaranya useState, useRef,useEffect, untuk membuat swipe otomatis.
 Mulai Kita tidak membutuhkan library atau komponen eksternal, kita akan menggunakan komponen dan fungsi yang sudah ada pada React dan React Native.</description>
     </item>

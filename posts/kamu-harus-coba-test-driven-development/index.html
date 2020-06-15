@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <title>Buat Carousel auto slide menggunakan React Hooks - Chimemoo</title>
+    <title>Kamu harus coba Test Driven Development! - Chimemoo</title>
     
-    <meta name="description" content="Pendahuluan Halo semua! Untuk tutorial ini saya akan menggunakan snack.expo.io untuk mempercepat proses, sehingga fokus pada proses dan hasilnya saja nanti. Komponen yang akan kita buat pada artikel ini adalah Carousel yang dapat di ganti dengan swipe manual ataupun otomatis. Kita akan menggunakna React Hooks diantaranya useState, useRef,useEffect, untuk membuat swipe otomatis.
-Mulai Kita tidak membutuhkan library atau komponen eksternal, kita akan menggunakan komponen dan fungsi yang sudah ada pada React dan React Native.">
+    <meta name="description" content="Intro Apakah kamu seorang programmer/developer? Ketika kamu membuat sebuah program apakah kamu melakukan testing terlebih dahulu sebelum kode tersebut digunakan? Jika tidak, segera bertobatlah, just kidding :). Pentingnya testing dalam tahap pengembangan program akan menjauhkan kita (programmer) dari hal yang tidak kita inginkan ketika program tersebut sudah berjalan di production. Oleh karena itu dalam setiap metode pengembangan software tahapan ini selalu ada.
+Namun melakukan testing pada program yang dibuat adalah hal yang cukup mahal (bisa jadi memakan waktu atau membutuhkan banyak resource) jika dilakukan manual, oleh karena itu muncul lah tool automated testing yang membantu tahapan ini.">
     <meta name="author" content="chimemoo">
     
     <link href="https://chimemoo.github.io/an-old-hope.min.css" rel="stylesheet">
@@ -89,118 +89,55 @@ Mulai Kita tidak membutuhkan library atau komponen eksternal, kita akan mengguna
 
 <article class="post-single">
   <header class="post-header">
-    <h1 class="post-title">Buat Carousel auto slide menggunakan React Hooks</h1>
-    <div class="post-meta">chimemoo · June 15, 2020</div>
+    <h1 class="post-title">Kamu harus coba Test Driven Development!</h1>
+    <div class="post-meta">chimemoo · June 14, 2020</div>
   </header>
-  <div class="post-content"><h2 id="pendahuluan">Pendahuluan</h2>
-<p>Halo semua! Untuk tutorial ini saya akan menggunakan snack.expo.io untuk mempercepat proses, sehingga fokus pada proses dan hasilnya saja nanti. Komponen yang akan kita buat pada artikel ini adalah Carousel yang dapat di ganti dengan swipe manual ataupun otomatis. Kita akan menggunakna React Hooks diantaranya <code>useState</code>, <code>useRef</code>,<code>useEffect</code>, untuk membuat swipe otomatis.</p>
-<h2 id="mulai">Mulai</h2>
-<p>Kita tidak membutuhkan library atau komponen eksternal, kita akan menggunakan komponen dan fungsi yang sudah ada pada React dan React Native.
-Pertama, sebelum kita mengedit file <code>index.js</code> buat file <code>styles.js</code> terlebih dahulu untuk styling komponennya. Berikut isi file nya</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">StyleSheet</span>, <span style="color:#a6e22e">Dimensions</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;react-native&#39;</span>;
+  <div class="post-content"><h2 id="intro">Intro</h2>
+<p>Apakah kamu seorang programmer/developer? Ketika kamu membuat sebuah program apakah kamu melakukan testing terlebih dahulu sebelum kode tersebut digunakan? Jika tidak, <strong>segera bertobatlah</strong>, <strong>just kidding</strong> :). Pentingnya testing dalam tahap pengembangan program akan menjauhkan kita (programmer) dari hal yang tidak kita inginkan ketika program tersebut sudah berjalan di production. Oleh karena itu dalam setiap metode pengembangan software tahapan ini selalu ada.</p>
+<p>Namun melakukan testing pada program yang dibuat adalah hal yang cukup mahal (bisa jadi memakan waktu atau membutuhkan banyak resource) jika dilakukan manual, oleh karena itu muncul lah tool automated testing yang membantu tahapan ini. Dengan adanya tool tersebut proses testing jadi lebih cepat.</p>
+<h2 id="apa-itu-test-driven-development-tdd">Apa itu Test Driven Development (TDD)?</h2>
+<p>Jika biasanya kamu hanya tahu bahwa testing berada di akhir proses pengembangan. Pada TDD, proses tersebut dibalik, dimana diawal penulisan kode, programmer menulis banyak sekali <code>test case</code>, kemudian berdasarkan <code>test case</code> tersebut kemudian programmer berusaha menulis kode yang bertujuan menyelesaikan test tersebut. Artinya kode yang dibuat harus lolos dalam uji coba yang ditentukan sebelumnya. Ketika kode yang dibuat berhasil melewati proses test, tahapan selanjutnya adalah refactor.</p>
+<h2 id="mengapa-menulis-testing-kode-dilakukan-diawal">Mengapa Menulis Testing kode dilakukan diawal?</h2>
+<p>Hal ini dilakukan karena misalnya ketika kita menulis fungsi untuk mengecek apakah email valid atau tidak. Setelah menulis kode tersebut kita menulis <code>test case</code> nya. Namun yang terjadi misalnya, ternyata kode yang dibuat tidak bisa menyelesaikan salah satu <code>test case</code>, akibatnya kita harus merubah kembali fungsi yang dibuat sebelumnya dan kemudian melakukan test lagi. Hal tersebut bukanlah hal yang baik dilakukan, karena prosesnya menjadi lebih lambat dan tidak efisien. Oleh karena itulah TDD muncul untuk menyelesaikan masalah tersebut.</p>
+<h2 id="studi-kasus">Studi Kasus</h2>
+<p>Saya seorang programmer diperintahkan oleh senior saya untuk membuat sebuah program untuk menghitung penjumlahan angka pada array. Yang pertama saya lakukan adalah menulis <code>test case</code> terlebih dahulu. Karena saya menggunakan <code>pytest</code> secara default nama file test harus diberi awalan nama <code>test_</code> sehingga nama file nya menjadi <code>test_sum_array.py</code>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> sum_array <span style="color:#f92672">import</span> sum_of_array
 
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">screenWidth</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">round</span>(<span style="color:#a6e22e">Dimensions</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;window&#39;</span>).<span style="color:#a6e22e">width</span>);
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">test_5_component</span>():
+    <span style="color:#66d9ef">assert</span>(sum_of_array([<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>]) <span style="color:#f92672">==</span> <span style="color:#ae81ff">15</span>)
+    
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">test_4_component</span>():
+    <span style="color:#66d9ef">assert</span>(sum_of_array([<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>]) <span style="color:#f92672">==</span> <span style="color:#ae81ff">10</span>)
+    
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">test_5_with_decimal</span>():
+    <span style="color:#66d9ef">assert</span>(sum_of_array([<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5.5</span>]) <span style="color:#f92672">==</span> <span style="color:#ae81ff">15.5</span>)
+</code></pre></div><p>Kemudian setelah menulis <code>test case</code> saya menulis fungsi untuk memecahkan masalah tersebut. Berikut <code>sum_array.py</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">sum_of_array</span>(ar):
+    total <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> ar:
+        total <span style="color:#f92672">=</span> total<span style="color:#f92672">+</span>i
+    <span style="color:#66d9ef">return</span> total
+</code></pre></div><p>Kemudian saya menjalankan kode test tersebut. Hasilnya adalah sebagai berikut :</p>
+<pre><code class="language-console" data-lang="console">root@c18a26593cfe:/home/workspace# pytest
+=================================================== test session starts ====================================================
+platform linux -- Python 3.6.3, pytest-5.4.3, py-1.8.1, pluggy-0.13.1
+rootdir: /home/workspace
+plugins: requests-mock-1.5.2
+collected 3 items                                                                                                          
 
-<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#a6e22e">StyleSheet</span>.<span style="color:#a6e22e">create</span>({
-  <span style="color:#a6e22e">bannerImage</span><span style="color:#f92672">:</span> {
-    <span style="color:#a6e22e">width</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">screenWidth</span>,
-    <span style="color:#a6e22e">height</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">250</span>,
-    <span style="color:#a6e22e">alignItems</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;center&#39;</span>,
-  },
-  <span style="color:#a6e22e">bannerPageContainer</span><span style="color:#f92672">:</span> {
-    <span style="color:#a6e22e">flexDirection</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;row&#39;</span>,
-    <span style="color:#a6e22e">position</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;absolute&#39;</span>,
-    <span style="color:#a6e22e">bottom</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">10</span>,
-  },
-  <span style="color:#a6e22e">bannerSliderIcon</span><span style="color:#f92672">:</span> {
-    <span style="color:#a6e22e">backgroundColor</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;#fff&#39;</span>,
-    <span style="color:#a6e22e">width</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">35</span>,
-    <span style="color:#a6e22e">height</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">5</span>,
-    <span style="color:#a6e22e">borderRadius</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span>,
-    <span style="color:#a6e22e">marginHorizontal</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">5</span>,
-  },
-});
-</code></pre></div><p>Kemudian pada file <code>index.js</code> / <code>App.js</code>, kita akan import beberapa komponen dan file,  seperti dibawah.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">React</span>, { <span style="color:#a6e22e">useState</span>, <span style="color:#a6e22e">useRef</span>, <span style="color:#a6e22e">useEffect</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;react&#39;</span>;
-<span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">View</span>, <span style="color:#a6e22e">StyleSheet</span>, <span style="color:#a6e22e">Dimensions</span>, <span style="color:#a6e22e">ScrollView</span>, <span style="color:#a6e22e">Image</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;react-native&#39;</span>;
-<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">Constants</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;expo-constants&#39;</span>;
-<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">styles</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;./style&#39;</span>;
-</code></pre></div><p>Untuk gambar, kita akan gunakan beberapa gambar dari <strong>unsplash</strong>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">images</span> <span style="color:#f92672">=</span> [
-  <span style="color:#e6db74">&#39;https://images.unsplash.com/photo-1508138221679-760a23a2285b?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60&#39;</span>,
-  <span style="color:#e6db74">&#39;https://images.unsplash.com/photo-1485550409059-9afb054cada4?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=701&amp;q=80&#39;</span>,
-  <span style="color:#e6db74">&#39;https://images.unsplash.com/photo-1519125323398-675f0ddb6308?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1050&amp;q=80&#39;</span>,
-  <span style="color:#e6db74">&#39;https://images.unsplash.com/photo-1429087969512-1e85aab2683d?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80&#39;</span>,
-];
-</code></pre></div><p>Pada komponen Carousel yang akan kita buat ini, kita tidak akan menggunakan FlatList, kita hanya akan menggunakan ScrollView saja, kemudian gambar akan di loop menggunakan <code>map</code> di dalam ScrollView. Karena kita ingin membuat gambar di scroll secara horizontal maka tambahkan props <code>horizontal</code>, <code>ref</code> digunakan untuk mentrack posisi koordinat pada gambar yang sedang aktif.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx">&lt;<span style="color:#f92672">View</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">styles</span>.<span style="color:#a6e22e">bannerImage</span>}&gt;
-    &lt;<span style="color:#f92672">ScrollView</span>
-        <span style="color:#a6e22e">horizontal</span>
-        <span style="color:#a6e22e">pagingEnabled</span>
-        <span style="color:#a6e22e">ref</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">autoPlayRef</span>}
-        <span style="color:#a6e22e">onScroll</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">changePage</span>}
-        <span style="color:#a6e22e">showsHorizontalScrollIndicator</span><span style="color:#f92672">=</span>{<span style="color:#66d9ef">false</span>}
-        <span style="color:#a6e22e">onMomentumScrollEnd</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">changePage</span>}
-    &gt;
-        {<span style="color:#a6e22e">images</span>.<span style="color:#a6e22e">map</span>((<span style="color:#a6e22e">image</span>) =&gt; (
-        &lt;<span style="color:#f92672">Image</span> <span style="color:#a6e22e">key</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">image</span>} <span style="color:#a6e22e">source</span><span style="color:#f92672">=</span>{{ <span style="color:#a6e22e">uri</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">image</span> }} <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">styles</span>.<span style="color:#a6e22e">bannerImage</span>} /&gt;
-        ))}
-    &lt;/<span style="color:#f92672">ScrollView</span>&gt;
-    &lt;<span style="color:#f92672">View</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">styles</span>.<span style="color:#a6e22e">bannerPageContainer</span>}&gt;
-        {<span style="color:#a6e22e">images</span>.<span style="color:#a6e22e">map</span>((<span style="color:#a6e22e">image</span>, <span style="color:#a6e22e">i</span>) =&gt; (
-        &lt;<span style="color:#f92672">View</span>
-            <span style="color:#a6e22e">key</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">image</span>}
-            <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span>{[<span style="color:#a6e22e">styles</span>.<span style="color:#a6e22e">bannerSliderIcon</span>, { <span style="color:#a6e22e">backgroundColor</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">activePage</span> <span style="color:#f92672">?</span> <span style="color:#e6db74">&#39;#fff&#39;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;rgba(255,255,255,0.5)&#39;</span> }]}
-        /&gt;
-        ))}
-    &lt;/<span style="color:#f92672">View</span>&gt;
-&lt;/<span style="color:#f92672">View</span>&gt;
-</code></pre></div><p>Kemudian kita tambahkan fungsi di sebelum <code>return</code> sebagai berikut</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#66d9ef">const</span> [<span style="color:#a6e22e">activePage</span>, <span style="color:#a6e22e">setActivePage</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">useState</span>(<span style="color:#ae81ff">0</span>);
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">autoPlayRef</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">useRef</span>();
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">prevCountRef</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">useRef</span>();
+test_sum_array.py ...                                                                                                [100%]
 
-<span style="color:#a6e22e">prevCountRef</span>.<span style="color:#a6e22e">current</span> <span style="color:#f92672">=</span> { <span style="color:#a6e22e">activePage</span>, <span style="color:#a6e22e">setActivePage</span> };
-
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">changePage</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">event</span>) =&gt; {
-    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">viewSize</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">nativeEvent</span>.<span style="color:#a6e22e">layoutMeasurement</span>.<span style="color:#a6e22e">width</span>;
-    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">contentOffset</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">nativeEvent</span>.<span style="color:#a6e22e">contentOffset</span>.<span style="color:#a6e22e">x</span>;
-    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">index</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">floor</span>(<span style="color:#a6e22e">contentOffset</span> <span style="color:#f92672">/</span> <span style="color:#a6e22e">viewSize</span>);
-    <span style="color:#a6e22e">setActivePage</span>(<span style="color:#a6e22e">index</span>);
-};
-
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">move</span>(<span style="color:#a6e22e">next</span>) {
-    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">autoPlayRef</span>.<span style="color:#a6e22e">current</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span>) {
-        <span style="color:#a6e22e">autoPlayRef</span>.<span style="color:#a6e22e">current</span>.<span style="color:#a6e22e">scrollTo</span>({
-        <span style="color:#a6e22e">y</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span>,
-        <span style="color:#a6e22e">x</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">screenWidth</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">next</span>,
-        <span style="color:#a6e22e">animated</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
-        });
-    }
-}
-
-<span style="color:#a6e22e">useEffect</span>(() =&gt; {
-<span style="color:#a6e22e">setInterval</span>(() =&gt; {
-        <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">next</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">prevCountRef</span>.<span style="color:#a6e22e">current</span>.<span style="color:#a6e22e">activePage</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">images</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">?</span> <span style="color:#a6e22e">prevCountRef</span>.<span style="color:#a6e22e">current</span>.<span style="color:#a6e22e">activePage</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span>;
-        <span style="color:#a6e22e">move</span>(<span style="color:#a6e22e">next</span>);
-    }, <span style="color:#ae81ff">5000</span>);
-}, []);
-</code></pre></div><p><code>activePage</code> berfungsi untuk menyimpan state gambar yang aktif. Fungsi <code>move</code> adalah fungsi untuk melakukan Scroll ke posisi sumbu x yang diambil dari <code>next</code> dikali dengan lebar layar. <code>next</code> diperoleh dari indeks gambar yang aktif, jika <code>index</code> bernilai 0 maka jika dikalikan dengan lebar layar hasilnya akan 0, maka gambar yang akan tampil/aktif adalah gambar pertama. Nah untuk melakukan perpindahan gambarnya, kita akan menggunakan <code>useEffect</code> dimana didalamnya kita gunakan interval setaip 5000ms, fungsi <code>move</code> akan dijalankan.</p>
-<h2 id="recap">Recap</h2>
-
-
-<div data-snack-id="@chimemoo/carousel" data-snack-platform="web" data-snack-preview="true" data-snack-theme="light" style="overflow:hidden;background:#fafafa;border:1px solid rgba(0,0,0,.08);border-radius:4px;height:505px;width:100%"></div>
-<script async src="https://snack.expo.io/embed.js"></script>
-
-<h2 id="penutup">Penutup</h2>
-<p>Nah sekian untuk tutorial singkatnya, teman-teman dapat langsung coba snack.expo.io diatas. Sekian Terimakasih!</p>
+==================================================== 3 passed in 0.03s =====================================================
+</code></pre><p>Berdasarkan hasil diatas, kode yang saya buat berhasil menyelesaikan <code>test case</code>.</p>
+<h2 id="konklusi">Konklusi</h2>
+<p>Dengan adanya Test Driven Development ini proses pengembangan software menjadi lebih menarik, dan menurut saya seperti sebuah game dimana kita sebagai programmer harus bisa menyelesaikan kasus yang kita buat.</p>
+<p>Sekian.</p>
 </div>
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://chimemoo.github.io/tags/react-native">React Native</a></li>
-      <li><a href="https://chimemoo.github.io/tags/react">React</a></li>
-      <li><a href="https://chimemoo.github.io/tags/javascript">Javascript</a></li>
-      <li><a href="https://chimemoo.github.io/tags/tutorial">Tutorial</a></li>
+      <li><a href="https://chimemoo.github.io/tags/testing">Testing</a></li>
+      <li><a href="https://chimemoo.github.io/tags/programming">Programming</a></li>
+      <li><a href="https://chimemoo.github.io/tags/python">Python</a></li>
     </ul>
   </footer>
   <br>
