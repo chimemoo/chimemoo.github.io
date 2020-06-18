@@ -6,10 +6,21 @@
     <description>Recent content on Chimemoo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>id</language>
-    <lastBuildDate>Mon, 15 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://chimemoo.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Notes : Statistik dasar menggunakan R untuk Data Science</title>
+      <link>https://chimemoo.github.io/posts/learning-statistics-using-r-for-data-science/</link>
+      <pubDate>Thu, 18 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://chimemoo.github.io/posts/learning-statistics-using-r-for-data-science/</guid>
+      <description>Materi Statistik vs Statistika Statistika merupakan sebuah ilmu yang mempelajari bagaimana cara pengumpulan data, menganalisis, menginterpretasikan data. Sementara Statistik merupakan hasil data yang disajikan baik dalam bentuk tabel, grafik dan sebagainya.
+Mengapa Statistik itu Penting Statistik menjadi penting karena dapat digunakan sebagai dasar pengambilan keputusan dengan cara cepat. Selain itu dalam konteks &amp;ldquo;Data Science&amp;rdquo;, statistik merupakan fondasi dasar untuk memahami lebih dalam dunia &amp;ldquo;Data Science&amp;rdquo;.
+Istilah dasar dalam Statistik Terdapat 2 istilah yang perlu dipahami yaitu adalah sampel dan populasi.</description>
+    </item>
     
     <item>
       <title>Buat Carousel auto slide menggunakan React Hooks</title>

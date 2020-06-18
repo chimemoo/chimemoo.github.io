@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Statistics on Chimemoo</title>
+    <link>https://chimemoo.github.io/tags/statistics/</link>
+    <description>Recent content in Statistics on Chimemoo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>id</language>
+    <lastBuildDate>Thu, 18 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://chimemoo.github.io/tags/statistics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Notes : Statistik dasar menggunakan R untuk Data Science</title>
+      <link>https://chimemoo.github.io/posts/learning-statistics-using-r-for-data-science/</link>
+      <pubDate>Thu, 18 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://chimemoo.github.io/posts/learning-statistics-using-r-for-data-science/</guid>
+      <description>Materi Statistik vs Statistika Statistika merupakan sebuah ilmu yang mempelajari bagaimana cara pengumpulan data, menganalisis, menginterpretasikan data. Sementara Statistik merupakan hasil data yang disajikan baik dalam bentuk tabel, grafik dan sebagainya.
+Mengapa Statistik itu Penting Statistik menjadi penting karena dapat digunakan sebagai dasar pengambilan keputusan dengan cara cepat. Selain itu dalam konteks &amp;ldquo;Data Science&amp;rdquo;, statistik merupakan fondasi dasar untuk memahami lebih dalam dunia &amp;ldquo;Data Science&amp;rdquo;.
+Istilah dasar dalam Statistik Terdapat 2 istilah yang perlu dipahami yaitu adalah sampel dan populasi.</description>
+    </item>
+    
+  </channel>
+</rss>
