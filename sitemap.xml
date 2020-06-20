@@ -4,7 +4,49 @@
   
   <url>
     <loc>https://chimemoo.github.io/</loc>
-    <lastmod>2020-06-18T00:00:00+00:00</lastmod>
+    <lastmod>2020-06-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chimemoo.github.io/tags/dicoding/</loc>
+    <lastmod>2020-06-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chimemoo.github.io/posts/</loc>
+    <lastmod>2020-06-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chimemoo.github.io/tags/python/</loc>
+    <lastmod>2020-06-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chimemoo.github.io/tags/submission/</loc>
+    <lastmod>2020-06-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chimemoo.github.io/posts/submission-dicoding-kelas-belajar-machine-learning-untuk-pemula/</loc>
+    <lastmod>2020-06-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://chimemoo.github.io/tags/</loc>
+    <lastmod>2020-06-20T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -24,13 +66,6 @@
   </url>
   
   <url>
-    <loc>https://chimemoo.github.io/posts/</loc>
-    <lastmod>2020-06-18T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://chimemoo.github.io/tags/r/</loc>
     <lastmod>2020-06-18T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -39,13 +74,6 @@
   
   <url>
     <loc>https://chimemoo.github.io/tags/statistics/</loc>
-    <lastmod>2020-06-18T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://chimemoo.github.io/tags/</loc>
     <lastmod>2020-06-18T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -95,13 +123,6 @@
   
   <url>
     <loc>https://chimemoo.github.io/tags/programming/</loc>
-    <lastmod>2020-06-14T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://chimemoo.github.io/tags/python/</loc>
     <lastmod>2020-06-14T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

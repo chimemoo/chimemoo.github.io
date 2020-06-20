@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dicoding on Chimemoo</title>
+    <link>https://chimemoo.github.io/tags/dicoding/</link>
+    <description>Recent content in Dicoding on Chimemoo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>id</language>
+    <lastBuildDate>Sat, 20 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://chimemoo.github.io/tags/dicoding/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Submission Dicoding kelas Belajar Machine Learning untuk Pemula</title>
+      <link>https://chimemoo.github.io/posts/submission-dicoding-kelas-belajar-machine-learning-untuk-pemula/</link>
+      <pubDate>Sat, 20 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://chimemoo.github.io/posts/submission-dicoding-kelas-belajar-machine-learning-untuk-pemula/</guid>
+      <description>Pendahuluan Halo semuanya, setelah saya berusaha untuk menyelesaikan kelas belajar machine learning pemula sambil melakukan kesibukan lain seperti bekerja dan hal lainnya. Akhirnya saya menyelesaikan submission. Submission yang ada pada kelas ini adalah mencoba menggunakan dataset gambar rock sccisors paper dimana kita harus melakukan klasifikasi dengan ketentuan yang telah diberikan. Dimana minimal akurasi yang harus didapatkan agar lulus kelas ini adalah 85%. Temen-temen yang mungkin mengambil kelas tersebut bisa mempelajari kode dibawah untuk menyelesaikannya.</description>
+    </item>
+    
+  </channel>
+</rss>
