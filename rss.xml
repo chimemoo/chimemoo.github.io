@@ -1,4 +1,116 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Christmemory Site]]></title><description><![CDATA[A personal site]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 14 Mar 2021 06:11:07 GMT</lastBuildDate><item><title><![CDATA[Bagaimanah penamaan Variabel, fungsi, Kelas yang benar?]]></title><description><![CDATA[Dalam memberikan nama pada variabel, fungsi dan kelas kadang kita sebagai programer mengabaikan pentingnya hal tersebut. Berikut adalah…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/bagaimana-penamaan-variable-fungsi-kelas-yang-benar/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/bagaimana-penamaan-variable-fungsi-kelas-yang-benar/</guid><pubDate>Tue, 28 Jul 2020 22:40:32 GMT</pubDate><content:encoded>&lt;p&gt;Dalam memberikan nama pada variabel, fungsi dan kelas kadang kita sebagai programer mengabaikan pentingnya hal tersebut. Berikut adalah beberapa panduan yang dapat diikuti untuk penamaan hal tersebut.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Christmemory Site]]></title><description><![CDATA[A personal site]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 17 Mar 2021 15:21:54 GMT</lastBuildDate><item><title><![CDATA[Belajar Tipe Data di Kotlin]]></title><description><![CDATA[Apa saja tipe data pada kotlin? Character, String, Array, Numbers, Boolean Bagaimana menginisialisasi variabel pada kotlin Dengan…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/kotlin-data-types/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/kotlin-data-types/</guid><pubDate>Wed, 17 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Apa saja tipe data pada kotlin?&lt;/h1&gt;
+&lt;p&gt;Character, String, Array, Numbers, Boolean&lt;/p&gt;
+&lt;h1&gt;Bagaimana menginisialisasi variabel pada kotlin&lt;/h1&gt;
+&lt;p&gt;Dengan menggunakan keyword var atau val&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;kotlin&quot;&gt;&lt;pre class=&quot;language-kotlin&quot;&gt;&lt;code class=&quot;language-kotlin&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// Struktur inisialisasi&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; identifier&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; Type &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; initialization
+
+&lt;span class=&quot;token comment&quot;&gt;// Contoh inisialisasi variabel&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; city&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; String &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Purwakarta&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1&gt;Bedanya var dan val?&lt;/h1&gt;
+&lt;p&gt;var dapat di reassign, sedangkan val tidak&lt;/p&gt;
+&lt;h1&gt;Lebih lanjut&lt;/h1&gt;
+&lt;p&gt;Tipe data menentukan operasi apa yang bisa dilakukan pada data tersebut&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Memulai project .NET?]]></title><description><![CDATA[Instalasi .NET Download .NET Core https://dotnet.microsoft.com/download Download VS Code C# Extension Memulai Project Buat sebuah folder…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/memulai-project-dotnet/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/memulai-project-dotnet/</guid><pubDate>Sun, 14 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Instalasi .NET&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Download .NET Core &lt;a href=&quot;https://dotnet.microsoft.com/download&quot;&gt;https://dotnet.microsoft.com/download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Download VS Code&lt;/li&gt;
+&lt;li&gt;C# Extension&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Memulai Project&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Buat sebuah folder baru, kemudian buka dalam VSCode&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Buka terminal jalankan perintah &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;dotnet new console&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;Perintah diaas akan membuat sebuah project awal dengan basic hello world&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Kemudian untuk menjalankan program, ketikkan perintah&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;dotnet run&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;Akan muncul tulisan “Hello World!”&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1&gt;Menambahkan NuGet package menggunakan .NET Core tool&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Pada contoh ini kita akan menambahkan library Humanizer, ketikan perintah berikut di terminal&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;dotnet &lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt; package Humanizer --version &lt;span class=&quot;token number&quot;&gt;2.7&lt;/span&gt;.9&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Dotnet akan mendownload library tersebut dari NuGet&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Setelah selesai buka file DotNetDepedencies.csproj, lalu temukan section ItemGroup, kemudian seharusnya library Humanizer sudah muncul seperti berikut&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;xml&quot;&gt;&lt;pre class=&quot;language-xml&quot;&gt;&lt;code class=&quot;language-xml&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;ItemGroup&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;PackageReference&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;Include&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;Humanizer&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;Version&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;2.7.9&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;ItemGrou&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Setelah itu buka file Program.cs, import Humanizer pada bagian atas Program.cs&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;c#&quot;&gt;&lt;pre class=&quot;language-c#&quot;&gt;&lt;code class=&quot;language-c#&quot;&gt;using Humanizer;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Kemudian pada bagian di dalam kelas program, dibawah method main tambahkan kode berikut untuk menampilkan penggunaan library Humanize&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;c#&quot;&gt;&lt;pre class=&quot;language-c#&quot;&gt;&lt;code class=&quot;language-c#&quot;&gt;static void HumanizeQuantities()
+{
+    Console.WriteLine(&amp;quot;case&amp;quot;.ToQuantity(0));
+    Console.WriteLine(&amp;quot;case&amp;quot;.ToQuantity(1));
+    Console.WriteLine(&amp;quot;case&amp;quot;.ToQuantity(5));
+}
+
+static void HumanizeDates()
+{
+    Console.WriteLine(DateTime.UtcNow.AddHours(-24).Humanize());
+    Console.WriteLine(DateTime.UtcNow.AddHours(-2).Humanize());
+    Console.WriteLine(TimeSpan.FromDays(1).Humanize());
+    Console.WriteLine(TimeSpan.FromDays(16).Humanize());
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Kemudian pada Main method panggil fungsi yang sudah kita buat sebelumnya&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;c#&quot;&gt;&lt;pre class=&quot;language-c#&quot;&gt;&lt;code class=&quot;language-c#&quot;&gt;static void Main(string[] args)
+{   
+    Console.WriteLine(&amp;quot;Quantities:&amp;quot;);
+    HumanizeQuantities();
+
+    Console.WriteLine(&amp;quot;\nDate/Time Manipulation:&amp;quot;);
+    HumanizeDates();
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Setelah itu jalankan kembali program menggunakan dotnet run. Hasilnya seperti berikut&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Quantities:
+0 cases
+1 case
+5 cases
+
+Date/Time Manipulation:
+yesterday
+2 hours ago
+1 day
+2 weeks &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[Apa itu .NET?]]></title><description><![CDATA[Apa itu .Net? Dotnet merupakan ekosistem Bahasa yang digunakan? Bahasa yang digunakan oleh developer .NET adalah C# (C Sharp) dan F# (F…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/apa-itu-dotnet/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/apa-itu-dotnet/</guid><pubDate>Sun, 14 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Apa itu .Net?&lt;/h1&gt;
+&lt;p&gt;Dotnet merupakan ekosistem&lt;/p&gt;
+&lt;h1&gt;Bahasa yang digunakan?&lt;/h1&gt;
+&lt;p&gt;Bahasa yang digunakan oleh developer .NET adalah C# (C Sharp) dan F# (F Sharp). Sebelum kode dapat dijalankan, kode yang ditulis akan di compile terlebih dahulu menggunakan .NET compiler sehingga menjadi intermediate language (IL). .NET compiler menyimpan kode IL kedalam file yang disebut denan .NET assembly, dengan mengkompilasi kode kedalam bentuk intermediate, code tersebut dapat dijalankan di sistem operasi yang terinstall dotnet.
+Untuk menjalankan kode diperlukan .NET runtime yang perupakan environtment eksekusi untuk kode yang sudah di compile.&lt;/p&gt;
+&lt;h1&gt;Penerapan dan Framework&lt;/h1&gt;
+&lt;p&gt;Dotnet dapat diterapkan di berbagai device dengan menggunakan framework tertentu yaitu :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Web : ASP.NET Core, ASP.NET Core MVC, ASP.NET Core Razor Pages&lt;/li&gt;
+&lt;li&gt;Web Client : Blazor&lt;/li&gt;
+&lt;li&gt;Dekstop : Winforms, Windows Presentation Foundation (WPF)&lt;/li&gt;
+&lt;li&gt;Mobile : Xamarin&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Mencoba dotnet&lt;/h1&gt;
+&lt;p&gt;untuk mencoba membuat aplikasi dotnet dapat menggunakan &lt;a href=&quot;https://try.dot.net&quot;&gt;https://try.dot.net&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Kapan menggunakan .NET?&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;.NET dapat digunakan pada project kecil dan besar&lt;/li&gt;
+&lt;li&gt;.NET dapat digunakan jika produktivitas sangat penting, karena dengan menggunakan .NET banyak sekali manfaat yang akan didapakan&lt;/li&gt;
+&lt;li&gt;Ketika membuat aplikasi enterprice karena terintegrasi dengan ekosistem microsoft seperi azure&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Sumber&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.microsoft.com/id-id/learn/modules/dotnet-introduction/2-what-is-dotnet&quot;&gt;https://docs.microsoft.com/id-id/learn/modules/dotnet-introduction/2-what-is-dotnet&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Bagaimanah penamaan Variabel, fungsi, Kelas yang benar?]]></title><description><![CDATA[Dalam memberikan nama pada variabel, fungsi dan kelas kadang kita sebagai programer mengabaikan pentingnya hal tersebut. Berikut adalah…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/bagaimana-penamaan-variable-fungsi-kelas-yang-benar/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/bagaimana-penamaan-variable-fungsi-kelas-yang-benar/</guid><pubDate>Tue, 28 Jul 2020 22:40:32 GMT</pubDate><content:encoded>&lt;p&gt;Dalam memberikan nama pada variabel, fungsi dan kelas kadang kita sebagai programer mengabaikan pentingnya hal tersebut. Berikut adalah beberapa panduan yang dapat diikuti untuk penamaan hal tersebut.&lt;/p&gt;
 &lt;h1&gt;Deskriptif&lt;/h1&gt;
 &lt;p&gt;Dalam memberikan nama baik itu variabel atau fungsi ada baiknya menggunakan nama yang deskriptif dan tersirat. Contohnya untuk sebuah output bertipe data boolean, kamu dapat menggunakan kata is atau has diawal nama, baru di ikuti dengan informasi yang disampaikan. Misalnya kamu membuat sebuah fungsi untuk mengecek apakah user online atau tidak, kamu dapat menggunakan nama isOnline dimana outputnya berupa jawaban yaitu true atau false.&lt;/p&gt;
 &lt;h1&gt;Konsisten namun tetap berbeda&lt;/h1&gt;
