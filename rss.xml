@@ -1,16 +1,187 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Christmemory Site]]></title><description><![CDATA[A personal site]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 17 Mar 2021 15:31:58 GMT</lastBuildDate><item><title><![CDATA[Belajar Tipe Data di Kotlin]]></title><description><![CDATA[Apa saja tipe data pada kotlin? Character, String, Array, Numbers, Boolean Bagaimana menginisialisasi variabel pada kotlin Dengan…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/kotlin-data-types/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/kotlin-data-types/</guid><pubDate>Wed, 17 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Apa saja tipe data pada kotlin?&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Christmemory Site]]></title><description><![CDATA[A personal site]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 22 Mar 2021 12:11:00 GMT</lastBuildDate><item><title><![CDATA[Belajar Tipe Data di Kotlin]]></title><description><![CDATA[Apa saja tipe data pada kotlin? Character, String, Array, Numbers, Boolean Bagaimana menginisialisasi variabel pada kotlin? Dengan…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/kotlin-data-types/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/kotlin-data-types/</guid><pubDate>Wed, 17 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Apa saja tipe data pada kotlin?&lt;/h2&gt;
 &lt;p&gt;Character, String, Array, Numbers, Boolean&lt;/p&gt;
-&lt;h1&gt;Bagaimana menginisialisasi variabel pada kotlin&lt;/h1&gt;
+&lt;h3&gt;Bagaimana menginisialisasi variabel pada kotlin?&lt;/h3&gt;
 &lt;p&gt;Dengan menggunakan keyword var atau val&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;kotlin&quot;&gt;&lt;pre class=&quot;language-kotlin&quot;&gt;&lt;code class=&quot;language-kotlin&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// Struktur inisialisasi&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; identifier&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; Type &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; initialization
 
 &lt;span class=&quot;token comment&quot;&gt;// Contoh inisialisasi variabel&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; city&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; String &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Purwakarta&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h1&gt;Bedanya var dan val?&lt;/h1&gt;
+&lt;h3&gt;Bedanya var dan val?&lt;/h3&gt;
 &lt;p&gt;var dapat di reassign, sedangkan val tidak&lt;/p&gt;
-&lt;h1&gt;Lebih lanjut&lt;/h1&gt;
-&lt;p&gt;Tipe data menentukan operasi apa yang bisa dilakukan pada data tersebut&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Memulai project .NET?]]></title><description><![CDATA[Instalasi .NET Download .NET Core https://dotnet.microsoft.com/download Download VS Code C# Extension Memulai Project Buat sebuah folder…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/memulai-project-dotnet/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/memulai-project-dotnet/</guid><pubDate>Sun, 14 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Instalasi .NET&lt;/h1&gt;
+&lt;h3&gt;Lebih lanjut?&lt;/h3&gt;
+&lt;p&gt;Tipe data menentukan operasi apa yang bisa dilakukan pada data tersebut&lt;/p&gt;
+&lt;h2&gt;Tipe Data Characters&lt;/h2&gt;
+&lt;p&gt;Terdapat dua tipe data yang bisa kita gunakan, yaitu Characters dan String. Untuke mendefinisikan nilainya dapat ditaru di dalam kutip tunggak ”&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;kotlin&quot;&gt;&lt;pre class=&quot;language-kotlin&quot;&gt;&lt;code class=&quot;language-kotlin&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;val&lt;/span&gt; character &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;A&apos;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;kotlin&quot;&gt;&lt;pre class=&quot;language-kotlin&quot;&gt;&lt;code class=&quot;language-kotlin&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;val&lt;/span&gt; character&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; Char &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;ABC&apos;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// Will be error because Char only have 1 character&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Kita dapat melakukan operasi increment (++) dan decrement (—) pada tipe data char&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;kotlin&quot;&gt;&lt;pre class=&quot;language-kotlin&quot;&gt;&lt;code class=&quot;language-kotlin&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; vocal &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;A&apos;&lt;/span&gt;
+
+    &lt;span class=&quot;token function&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Vocal &quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; vocal&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Vocal &quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; vocal&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Vocal &quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; vocal&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Vocal &quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; vocal&lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Vocal &quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; vocal&lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;/*
+
+Output :
+A
+B
+C
+D
+C
+
+*/&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Tipe Data String&lt;/h2&gt;
+&lt;p&gt;Pada dasarnya String merupakan sekumpulan karakter berbentuk array sehingga kita dapat mendapatkan karakter tunggal dengan mudah dengan memanfaatkan indexing&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;kotlin&quot;&gt;&lt;pre class=&quot;language-kotlin&quot;&gt;&lt;code class=&quot;language-kotlin&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;val&lt;/span&gt; text &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Test&quot;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;val&lt;/span&gt; firstChar &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; text&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+
+    &lt;span class=&quot;token function&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Krakter pertama dari &lt;span class=&quot;token interpolation variable&quot;&gt;$text&lt;/span&gt; yaitu &lt;span class=&quot;token interpolation variable&quot;&gt;$firstChar&lt;/span&gt;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;/*
+    output: Karakter pertama dari test yaitu T
+*/&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Selain itu kita juga dapat melakukan iterasi pada char dalam string menggunakan for loop.&lt;/p&gt;
+&lt;h2&gt;Tipe Data Array&lt;/h2&gt;
+&lt;p&gt;Array memungkinkan kita menyimpan beberapa data dalam sebuah variabel. Array pada kotlin dapat didefinisikan dengan cara berikut&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;kotlin&quot;&gt;&lt;pre class=&quot;language-kotlin&quot;&gt;&lt;code class=&quot;language-kotlin&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// Dapat memasukkan data yang memiliki tipe data sama&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;val&lt;/span&gt; array &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;arrayOf&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Dapat juga menambahkan tipe data berbeda&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;val&lt;/span&gt; mixArray &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;arrayOf&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Chimemoo&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Selain itu juga dapat membuat array dengan tipe data primitif yaitu: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;intArrayOf() : IntArray&lt;/li&gt;
+&lt;li&gt;booleanArrayOf() : BooleanArray&lt;/li&gt;
+&lt;li&gt;charArrayOf() : CharArray&lt;/li&gt;
+&lt;li&gt;longArrayOf() : LongArray&lt;/li&gt;
+&lt;li&gt;shortArrayOf() : ShortArray&lt;/li&gt;
+&lt;li&gt;byteArrayOf() : ByteArray&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Selain menggunakan fungsi arrayOf kita (juga dapat menggunakan kelas Array&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;kotlin&quot;&gt;&lt;pre class=&quot;language-kotlin&quot;&gt;&lt;code class=&quot;language-kotlin&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;val&lt;/span&gt; intArray &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Array&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;-&gt;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; i &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// [0, 1, 4, 9]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Pada kode di atas kita menentukan angka 4 sebagai size Array. Fungsi lambda di atas ada dua. Pertama, untuk mengambil indeks Array yang akan digunakan sebagai argumen.&lt;/p&gt;
+&lt;h2&gt;Tipe Data Numbers&lt;/h2&gt;
+&lt;p&gt;Pada kotlin terdapat beberapa tipe bawaan yang merepresentasikan tipe data Number yaitu Double, Long, Int, Short, Byte. Setiap data memiliki satuan bit berbeda-beda.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Int (32 Bit) : menyimpan data dari range -2^31 sampai +s^31-1 &lt;/li&gt;
+&lt;li&gt;Long (64 Bit): range -2^63 sampai +2^63-1&lt;/li&gt;
+&lt;li&gt;Short (16 Bit)&lt;/li&gt;
+&lt;li&gt;Double (64 Bit)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;kotlin&quot;&gt;&lt;pre class=&quot;language-kotlin&quot;&gt;&lt;code class=&quot;language-kotlin&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;val&lt;/span&gt; byteNumber&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; Byte &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0b11010010&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;val&lt;/span&gt; intNumber &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;100&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;val&lt;/span&gt; longNumber&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; Long &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;100&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;val&lt;/span&gt; longNumber2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;100L&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;val&lt;/span&gt; shortNumber&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; Short &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;val&lt;/span&gt; doubleNumber &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1.3&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Melakukan konversi&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;kotlin&quot;&gt;&lt;pre class=&quot;language-kotlin&quot;&gt;&lt;code class=&quot;language-kotlin&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;val&lt;/span&gt; byteNumber&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; Byte &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;val&lt;/span&gt; intNumber&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; Int &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; byteNumber&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;toInt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Menuliskan readable numerik&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;kotlin&quot;&gt;&lt;pre class=&quot;language-kotlin&quot;&gt;&lt;code class=&quot;language-kotlin&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;val&lt;/span&gt; readableNumber &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1_000_000&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;readableNumber&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// output 1000000&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Nullable Types&lt;/h2&gt;
+&lt;p&gt;Dengan menggunakan Kotlin kita bisa dimudahkan utuk menghindari terjadinya NullPointerException yang sering terjadi ada java.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;kotlin&quot;&gt;&lt;pre class=&quot;language-kotlin&quot;&gt;&lt;code class=&quot;language-kotlin&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// Contoh eror&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;val&lt;/span&gt; text&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; String &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// compile time error&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Contoh untuk mengatasi nilai null&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;val&lt;/span&gt; text&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; String&lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Dengan menambahkan tanda tanya setelah tipe data yang ditentukan, kotlin akan memahami bahwa variabel tersebut bertipe data string tapi bisa juga null.&lt;/p&gt;
+&lt;h2&gt;Safe Calls Operator (?)&lt;/h2&gt;
+&lt;p&gt;Seperti javascript, kotlin memiliki Safe calls operator untuk menghindari aplikasi error karena data yang tersimpan bernilai null, contoh&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;kotlin&quot;&gt;&lt;pre class=&quot;language-kotlin&quot;&gt;&lt;code class=&quot;language-kotlin&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;val&lt;/span&gt; text&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; String&lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;
+text&lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Kompiler kotlin akan langsung melewatkan baris text?.length jika nilainya null&lt;/p&gt;
+&lt;h2&gt;Elvis Operator (?:)&lt;/h2&gt;
+&lt;p&gt;Kita dapat menetapkan default number jika variabel bernilai null&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;kotlin&quot;&gt;&lt;pre class=&quot;language-kotlin&quot;&gt;&lt;code class=&quot;language-kotlin&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;val&lt;/span&gt; text&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; String&lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;val&lt;/span&gt; textLength &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; text&lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length &lt;span class=&quot;token operator&quot;&gt;?:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;7&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Dasar Cloud AWS]]></title><description><![CDATA[Tentang Cloud dan Amazon EC2 Layanan yang dapat digunakan untuk mendapatkan akses ke server virtual pada AWS disebut dengan Amazon EC…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/dasar-cloud-aws/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/dasar-cloud-aws/</guid><pubDate>Wed, 17 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Tentang Cloud dan Amazon EC2&lt;/h2&gt;
+&lt;p&gt;Layanan yang dapat digunakan untuk mendapatkan akses ke server virtual pada AWS disebut dengan Amazon EC2.&lt;/p&gt;
+&lt;p&gt;Dengan menggunakan layanan EC2, pengguna dapat memiliki kapasitas komputas yang fleksibel, hemat biaya dan cepat dibandingkan dengan menggunakan server sendiri di data center on-premise&lt;/p&gt;
+&lt;p&gt;Dengan menggunakan cloud kita tidak perlu lagi memikirkan soal hardware apa yang akan digunakan, bagaimana menginstal/menyiapkan hardware tersebut, kemudian juga soal ketika melakukan scaling pada hardware.&lt;/p&gt;
+&lt;p&gt;Dengan cloud kita hanya butuh beberapa menit untuk menyiapkan mesin yang dapat digunakan untuk menjalankan program yang kita buat. Selain itu, dengan sistem pembayaran Pay-for-what-you-use biaya akan lebih murah dibanding dengan menggunakan on-premise.&lt;/p&gt;
+&lt;p&gt;Amazon EC2 berjalan diatas host(mesin fisik) yang dikelola oleh AWS menggunakan teknologi virtualisasi. Program yang bertanggung jawab untuk membagi sumber daya fisik antara mesin virtual disebut Hypervisor.&lt;/p&gt;
+&lt;p&gt;Amazon EC2 memiliki banyak fleksibilitas dan kontrol. Kita dapat memilih sistem operasi yang di inginkan baik windows/linux, juga aplikasi yang ingin dijalankan pada EC2. Selain itu instance EC2 dapat diubah ubah ukurannya.&lt;/p&gt;
+&lt;p&gt;Ketika aplikasi yang dijalankan membutuhkan lebih banyak memori dan CPU disebut dengan &lt;b&gt;Vertical Scaling&lt;/b&gt; &lt;/p&gt;
+&lt;h2&gt;Cara Kerja Amazon EC2&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Luncurkan : Mulai dengan memilih template&lt;/li&gt;
+&lt;li&gt;Hubungkan&lt;/li&gt;
+&lt;li&gt;Gunakan&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Tipe Instance Amazon EC2&lt;/h2&gt;
+&lt;p&gt;Setiap tipe instance dikelompokkan dalam satu instance family dan dioptimalkan untuk tugas tertentu, diantaranya:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;General purpose instances : Instance untuk tujuan umum untuk berbagai beban kerja beragam dari aplikasi yang di pasang.&lt;/li&gt;
+&lt;li&gt;Compute optimized instances : Instances ideal untuk komputasi yang berpusat pada processor dengan performa tinggi, atau bisa juga pda beban kerja batch processing&lt;/li&gt;
+&lt;li&gt;Memory optimized instances : type yang ideal untuk beban kerja yang memproses data besar pada memory&lt;/li&gt;
+&lt;li&gt;Accelerated computing instances : tipe yang menggunakan perangkat keras akselerator untuk menjalankan fungsi tertentu secara efisien&lt;/li&gt;
+&lt;li&gt;Storage optimized instance : Khusus untuk beban kerja yang berkaitan dengan read dan write data yang tinggi&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Model Harga EC2 Instances&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;On-Demand adalah yang paling fleksibel dan tidak memiliki kontrak.&lt;/li&gt;
+&lt;li&gt;Spot Instances memungkinkan Anda untuk menggunakan kapasitas yang tak terpakai dengan tarif diskon.&lt;/li&gt;
+&lt;li&gt;Reserved Instances dapat memberikan diskon ketika Anda berkomitmen pada tingkat penggunaan tertentu.&lt;/li&gt;
+&lt;li&gt;Savings Plans juga akan memberikan Anda diskon saat berkomitmen pada tingkat penggunaan tertentu dan dapat diterapkan untuk EC2 instance, AWS Lambda dan AWS Fargate.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Penyesuaian Kapasitas di AWS&lt;/h2&gt;
+&lt;p&gt;Dengan adanya cloud kita menjadi lebih mudah me manage resource jika terdapat peningkatan permintaan, selain itu ketika aplikasih ingin di jalankan kita tidak perlu menebak-nebak berapa kira kira resources yang dibutuhkan seperti pada on premise.&lt;/p&gt;
+&lt;p&gt;Ketika sistem yang kita buat di cloud berjalan, kemudian ternyata terjadi peningkatan request sehingga instances tidak mampu menangani permintaan yang ada, kita dapat menambahkan instances baru sehingga permintaan yang baru akan tetap di response oleh instances yang baru ini, sehingga aplikasi akan terus available, dan pengguna tetap dapat menggunakan layanan yang kita buat.&lt;/p&gt;
+&lt;h2&gt;Amazon EC2 Auto Scaling&lt;/h2&gt;
+&lt;p&gt;Dengan amazon auto scaling kita dapat otomatis menambah dan menghapus amazon EC2 instances sesuai dengan kebutuhan. Amazon EC2 Auto Scaling memilii dua pendekatan yaitu :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dynamic Scaling : meresponse terhadap perubahan request&lt;/li&gt;
+&lt;li&gt;Predictive Scaling : menjadwalkan jumlah instances yang tepet berdasarkan prediksi request yang akan terjadi&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Scaling&lt;/h2&gt;
+&lt;p&gt;Untuk menangani permintaan yang berubah ubah terdapat dua pemahaman yaitu scaling up/down atau scaling in/out&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Scaling Up/Down : Yaitu menambah atau mengurangi daya komputasi pada instances&lt;/li&gt;
+&lt;li&gt;Scaling Out/In : Yaitu menambah/mengurangi jumlah instances&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Auto Scaling Group&lt;/h2&gt;
+&lt;p&gt;PAda cloud komputasi merupakan sumber daya yang terprogram sehingga kita dapat mengambil pendekatan yang lebih fleksibel untuk masalah scaling.&lt;/p&gt;
+&lt;p&gt;Untuk melakukan scaling kita perlu mengkonfigurasi mulai dari minimum capacity, desired capacity dan maximum capacity.&lt;/p&gt;
+&lt;h2&gt;Elastic Load Balancing&lt;/h2&gt;
+&lt;p&gt;AWS memiliki layanan load balancer berkinerja tinggi yang fungsinya untuk mendistribusikan traffic aplikasi yang masuk ke berbagai sumber daya seperti Amazon EC2 instance. Contoh penggunaan ELB adalah misalnya pada pagi hari lalu lintas traffic normal namun pada siang hari lalu lintas meningkat secara besar-besaran karena ada promo. Saat traffic mulai meningkat EC2 instance akan melakukan scalling out dan ketika instance siap Amazon EC2 Auto Scalling akan memberithu ELB bahwa instance baru sudah siap untuk menangani traffic, kemudian traffic berlebih akan di distribusikan ke instance baru, begitu juga ketika melakukan scalling in.&lt;/p&gt;
+&lt;h2&gt;Messaging dan Queueing&lt;/h2&gt;
+&lt;p&gt;Amazon Simple Queue Service (Amazon SQS) memungkinkan untuk mengirim, menyimpan dan menerima pesan antar aplikasi tanpa perlu kehilangan pesan tersebut, data yang terkandong (payload) akan dilindungi hingga terkirim. Contoh aplikasi A mengirim sebuah pesan ke dalam queue lalu aplikasi B akan mengambilnya, memprosesnya dan kemudian menghapusnya dari antrean.&lt;/p&gt;
+&lt;p&gt;Amazon Simple Notification Service (Amazon SNS) digunakan untuk mengirimkan pesan ke layanan. Menggunakan model publish/subscribe pub/sub. Amazon SNS dapat menyebarkan notifikasi kepada pelanggan menggunakan push notif.&lt;/p&gt;
+&lt;h2&gt;Layanan komputasi tambahan&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Komputasi serverless : layanan dimana kita hanya perlu memikirkan soal kode tidak memikirkan soal pengelolaan, pemeliharaan, availability, scaling, karena dasarnya sudah di kelola oleh AWS. Layanannya yaitu AWS Lambda dapat diskalakan secara otomatis, AWS lambda dirancang untuk menjalankan kode dibawah 15 menit. Cara kerjanya yaitu dengan ungga kode, konfigurasi trigger/http endpoint.&lt;/li&gt;
+&lt;li&gt;Container : Jika belum siap menggunakan serverless, namun tetap menginginkan efisiensi dapat menggunakan container seperti Amazon Container Service (Amazon ECS) dan Amazon Elastic Kubernetes Service (Amazon EKS). Container bekerja diatas EC2 Instance dan berjalan terpisah satu sama lain.&lt;/li&gt;
+&lt;li&gt;Amazon ECS : Merupakan sistem manajemen container, Amazon ECS mendukung Docker container aik CE dan EE.&lt;/li&gt;
+&lt;li&gt;Amazon EKS : Merupakan sistem layanan yang memungkinkan menjalankan kubernetes di AWS&lt;/li&gt;
+&lt;li&gt;Amazon Fargate : Merupakan platform komputasi serverless untuk amazon ECS dan Amazon EKS. Digunakan ketika kita tak ingin sibuk mengurusi EC2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Pilihan Layanan sesuai dengan kebutuhan&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Jika ingin akses penuh ke sistem operasi seperti linux/windows dapat menggunakan Amazon EC2&lt;/li&gt;
+&lt;li&gt;Juka ingin menjalankan fungsi yang singkat, berbasis trigger/kejadian namun tidak ingin mengelola infrastruktur dapat menggunakan AWS Lambda&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Jika ingin menjalankan beban kerja berbasis docker container di AWS :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Menentukan layanan orkestrasinya yaitu ECS atau EKS&lt;/li&gt;
+&lt;li&gt;kemudian memilih alat orkestrasinya, jika ingin mengelola diatas OS dapat menggunakan EC2 Instances atau dilingkunan serverless dapat menggunakan AWS Fargate&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Memulai project .NET?]]></title><description><![CDATA[Instalasi .NET Download .NET Core https://dotnet.microsoft.com/download Download VS Code C# Extension Memulai Project Buat sebuah folder…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/memulai-project-dotnet/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/memulai-project-dotnet/</guid><pubDate>Sun, 14 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Instalasi .NET&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Download .NET Core &lt;a href=&quot;https://dotnet.microsoft.com/download&quot;&gt;https://dotnet.microsoft.com/download&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Download VS Code&lt;/li&gt;
